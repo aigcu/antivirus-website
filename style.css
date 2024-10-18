@@ -1,0 +1,105 @@
+/* global styles */
+html {
+    background-color: #522398;
+    font-family: 'Montserrat';
+    max-width: 100%;
+}
+body {
+    margin: 0;
+    background-color: #150c25;
+}
+p {
+    font-family: 'Montserrat';
+    font-size: 1.0rem;
+    color: #848884;
+}
+
+.container {
+    padding: 1rem;
+}
+
+/* nav styles */
+nav {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #150c25;
+}
+
+nav h1 {
+    font-size: 32px;
+    color: white;
+}
+
+nav img {
+    width: 200px;
+}
+
+/* div styles */
+div h1 {
+    padding: 2rem 1rem;
+    font-family: 'Montserrat';
+}
+
+div h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+div p {
+    font-size: 1.1rem;
+    color: #848884;
+}
+
+/* team section */
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.team-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px;
+    text-align: center;
+    width: 280px;
+    padding: 1rem;
+}
+
+.team-picture {
+    width: 15rem;
+    height: auto;
+    border-radius: 10px;
+}
+
+.team-info {
+    margin-top: 15px;
+}
+
+.name {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.major {
+    margin: 5px 0;
+    color: #777;
+}
+
+.email {
+    color: #4fa4ff;
+    margin-top: 10px;
+}
+
+/* footer */
+footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
