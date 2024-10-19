@@ -2,6 +2,7 @@
     box-sizing: inherit;
 }
 
+
 /* global styles */
 html {
     box-sizing: border-box;
@@ -22,10 +23,6 @@ p {
     color: #848884;
 }
 
-h2 {
-    padding-top: 1.5rem;
-}
-
 @media (prefers-reduced-motion: no-preference) {
     html {
         scroll-behavior: smooth;
@@ -33,14 +30,16 @@ h2 {
 }
 
 .container {
-    max-width: min(96%, 1740px);
+    max-width: 88.5%;
     margin: 0 auto;
 }
 
 
 /* nav styles */
 .primary-nav {
-    padding-top: 1%;
+    max-width: 93.4%;
+    margin: 0 auto;
+    padding-top: 1.45%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,7 +60,7 @@ h2 {
     text-decoration: none;
     color: white;
     font-size: 1.25rem;
-    margin-left: 2rem;
+    margin-left: 2.15rem;
 }
 
 .nav-link:hover {
@@ -69,22 +68,26 @@ h2 {
     text-decoration: underline;
 }
 
+
 /* div styles */
-div h1 {
-    padding: 2rem 1rem;
-    font-family: 'Montserrat';
+.heading-spacer {
+    padding-top: 2.75rem;
 }
 
 div h2 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
+    font-family: 'Montserrat'; /* wrong font - not montserrat */
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 2.1rem;
+    padding-top: 0rem;
     color: white;
 }
 
 div p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #848884;
 }
+
 
 /* team section */
 .team-container {
@@ -134,6 +137,7 @@ div p {
     color: #4fa4ff;
     text-decoration: underline;
 }
+
 
 /* footer */
 footer {
