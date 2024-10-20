@@ -12,22 +12,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
 
     <!--Favicon-->
     <link rel="icon" type="image/x-icon" href="media/favicon.ico">
 </head>
 <body>
     <!--Navigation Bar-->
-    <nav class="primary-nav container">
-        <a href="https://aigcu.org/"><img class="nav-logo" src="media/cairLogo.png" alt="CAIR LOGO"></a>
+    <nav class="primary-nav glow">
         <ul class="nav-links">
-            <li><a href="#Our Goal" class="nav-link">Our Goal</a></li>
-            <li><a href="#Meet the Team" class="nav-link">Team</a></li>
+            <li><a href="https://aigcu.org/"><img class="nav-logo" src="media/cairLogo.png" alt="CAIR LOGO"></a></li>
+            <li><a href="#" class="nav-line">|</a></li>
+            <li><a href="#" class="nav-antivirus">Antivirus</a></li>
+        </ul>
+        <!--Hamburger Menu-->
+        <input id="menu-toggle" type="checkbox"/>
+        <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+        </label>
+        <!--Collapsable Menu-->
+        <ul class="nav-links menu">
+            <li><a href="#Goal" class="nav-link">Our Goal</a></li>
+            <li><a href="#Team" class="nav-link">Team</a></li>
         </ul>
         
     </nav>
     <!--Goal Section-->
-    <div class="container">
+    <div class="container" id="Goal">
         <h2>Our Goal</h2>
         <p>
             The Antivirus Team of Canyon Artificial Intelligence Research seeks to deliver a project focused 
@@ -37,9 +48,9 @@
     </div>
     <!--Team Section-->
     <div class="container">
-        <h2 class="heading-spacer">Meet the Team</h2>
+        <h2 class="heading-spacer" id="Team">Meet the Team</h2>
         <div class="team-container">
-            <div class="team-item">
+            <div class="team-item glow">
                 <img src="media/pictureBlank.png" alt="Joe Smith Photo" class="team-picture">
                 <div class="team-info">
                     <p class="name">Joe Smith</p>
@@ -47,7 +58,7 @@
                     <a class="email" href="mailto:example@email.com">example@email.com</a>
                 </div>
             </div>
-            <div class="team-item">
+            <div class="team-item glow">
                 <img src="media/pictureBlank.png" alt="Joe Smith Photo" class="team-picture">
                 <div class="team-info">
                     <p class="name">Joe Smith</p>
@@ -55,7 +66,7 @@
                     <a class="email" href="mailto:example@email.com">example@email.com</a>
                 </div>
             </div>
-            <div class="team-item">
+            <div class="team-item glow">
                 <img src="media/pictureBlank.png" alt="Joe Smith Photo" class="team-picture">
                 <div class="team-info">
                     <p class="name">Joe Smith</p>
@@ -63,7 +74,7 @@
                     <a class="email" href="mailto:example@email.com">example@email.com</a>
                 </div>
             </div>
-            <div class="team-item">
+            <div class="team-item glow">
                 <img src="media/pictureBlank.png" alt="Joe Smith Photo" class="team-picture">
                 <div class="team-info">
                     <p class="name">Joe Smith</p>
