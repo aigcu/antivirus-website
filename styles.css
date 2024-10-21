@@ -1,107 +1,110 @@
 *, ::before, ::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 
 /* global styles */
 html {
-    box-sizing: border-box;
-    background-color: #522398;
-    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    max-width: 100%;
+  box-sizing: border-box;
+  background-color: #522398;
+  font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 
+  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  max-width: 100%;
 }
 body {
-    min-height: 100vh;
-    min-height: 100dvh;
-    margin: 0;
-    background-color: #150c25;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+  background-color: #150c25;
 }
 p {
-    font-family: 'Montserrat';
-    font-size: 1.0rem;
-    color: #848884;
+  font-family: 'Montserrat';
+  font-size: 1.0rem;
+  color: #848884;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    html {
-        scroll-behavior: smooth;
-    }
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 .container {
-    max-width: 88.5%;
-    margin: 0 auto;
+  max-width: 88.5%;
+  margin: 0 auto;
 }
 
 .glow {
-    box-shadow: #522398 0 1px 10px 5px;
+  box-shadow: #522398 0 1px 10px 5px;
 }
 
 
 /* nav styles */
 .primary-nav {
-    min-width: 100%;
-    transform: translate(-2rem);
-    margin: 0 auto;
-    margin-left: 2rem;
-    padding: 1.45% 3.3% 0.45%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    background-color: #150c25;
+  min-width: 100%;
+  transform: translate(-2rem);
+  margin: 0 auto;
+  margin-left: 2rem;
+  padding: 1.45% 3.3% 0.45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  background-color: #150c25;
 }
 
 .nav-logo {
-    width: 200px;
+  width: 200px;
 }
 
 .nav-line {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-size: 46px;
-    font-weight: 300;
-    color: white;
-    text-decoration: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 46px;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
 }
 
 .nav-antivirus {
-    font-family: 'Roboto';
-    font-size: 53px;
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
+  font-family: 'Roboto';
+  font-size: 53px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-antivirus:hover {
+  text-shadow: 0 0 10px #522398, 0 0 10px #522398, 0 0 10px #522398, 0 0 10px #522398;
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-link {
-    color: white;
-    font-size: 24px;
-    margin-left: 2.15rem;
-    text-decoration: none;
-    display: inline-flex;
-    margin: 0.3em 1em;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  display: inline-flex;
+  margin: 0.3em 0.5em;
 }
 
 .nav-link:hover {
-    text-decoration: underline;
+  text-shadow: 0 0 10px #522398, 0 0 10px #522398, 0 0 10px #522398, 0 0 10px #522398;
 }
 
 nav label {
-    text-align: right;
-    display: block;
-    padding: 0.5em;
-    line-height: 1.6em;
-    align-self: center;
-    color: white;
+  text-align: right;
+  display: block;
+  padding: 0.5em;
+  line-height: 1.6em;
+  align-self: center;
+  color: white;
 }
 
 
@@ -170,9 +173,9 @@ nav label {
 }
 
 @media (max-width: 900px) {
-    .menu-button-container {
+  .menu-button-container {
     display: flex;
-    }
+  }
   .menu {
     position: absolute;
     top: 0;
@@ -214,77 +217,77 @@ nav label {
 
 /* div styles */
 .heading-spacer {
-    padding-top: 2.75rem;
+  padding-top: 2.75rem;
 }
 
 div h2 {
-    font-family: 'Roboto';
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin-bottom: 2.1rem;
-    padding-top: 6rem;
-    color: white;
+  font-family: 'Roboto';
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding-top: 6rem;
+  color: white;
 }
 
 div p {
-    font-size: 1.2rem;
-    color: #848884;
+  font-size: 1.2rem;
+  color: #848884;
 }
 
 
 /* team section */
 .team-container {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .team-item {
-    background: white;
-    border-radius: 10px;
-    text-align: center;
-    width: 280px;
-    padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  width: 280px;
+  padding: 1rem;
 }
 
 .team-picture {
-    width: 15rem;
-    height: auto;
-    border-radius: 10px;
+  width: 15rem;
+  height: auto;
+  border-radius: 10px;
 }
 
 .team-info {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .name {
-    font-size: 1.2rem;
-    color: #333;
+  font-size: 1.2rem;
+  color: #333;
 }
 
 .major {
-    margin: 5px 0;
-    color: #777;
+  margin: 5px 0;
+  color: #777;
 }
 
 .email {
-    color: black;
-    margin-top: 10px;
-    text-decoration: none;
+  color: black;
+  margin-top: 10px;
+  text-decoration: none;
 }
 
 .email:hover {
-    color: #4fa4ff;
-    text-decoration: underline;
+  color: white;
+  text-shadow: 0 0 10px #522398, 0 0 10px #522398, 0 0 10px #522398, 0 0 10px #522398;
 }
 
 
 /* footer */
 footer {
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
