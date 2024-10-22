@@ -195,14 +195,13 @@ nav label {
     
   }
   #menu-toggle:checked ~ .menu li {
-    /* border-top: 1px solid #522398; */
     height: 3.9em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   .menu > li {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin: 0;
     padding: 0.5em 0;
     width: 100%;
