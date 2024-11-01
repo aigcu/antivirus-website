@@ -1,2 +1,2 @@
 # antivirus-website
-GitHub pages website for the antivirus team
+Website for the antivirus team

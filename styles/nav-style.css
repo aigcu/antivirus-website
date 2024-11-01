@@ -1,78 +1,34 @@
-*, ::before, ::after {
-  box-sizing: inherit;
-}
-
-
-/* global styles */
-html {
-  box-sizing: border-box;
-  background-color: #522398;
-  font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 
-  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  max-width: 100%;
-}
-body {
-  min-height: 100vh;
-  min-height: 100dvh;
-  margin: 0;
-  background-color: #150c25;
-}
-p {
-  font-family: 'Montserrat';
-  font-size: 1.0rem;
-  color: #848884;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
-}
-
-.container {
-  max-width: 88.5%;
-  margin: 0 auto;
-}
-
-.glow {
-  box-shadow: #522398 0 1px 10px 5px;
-}
-
-
 /* nav styles */
 .primary-nav {
   min-width: 100%;
   transform: translate(-2rem);
   margin: 0 auto;
   margin-left: 2rem;
-  padding: 1.45% 3.3% 0.45%;
+  padding: 0.5% 3% 0.5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  z-index: 1;
   top: 0;
-  background-color: #150c25;
+  background: transparent;
+  background-color: rgba(22, 22, 22, 0.5);
+  backdrop-filter: blur(20px);
+  height: 123px;
 }
 
 .nav-logo {
-  width: 200px;
-}
-
-.nav-line {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 46px;
-  font-weight: 300;
-  color: white;
-  text-decoration: none;
+  height: 100px;
 }
 
 .nav-antivirus {
-  font-family: 'Roboto';
-  font-size: 53px;
+  font-family: 'Yanone Kaffeesatz';
+  font-size: 60px;
   font-weight: 500;
   color: white;
   text-decoration: none;
+  line-height: 115px;
+  white-space: nowrap;
 }
 
 .nav-antivirus:hover {
@@ -88,6 +44,7 @@ p {
 
 .nav-link {
   color: white;
+  font-family: 'Rubik Mono One';
   font-size: 24px;
   text-decoration: none;
   display: inline-flex;
@@ -172,14 +129,14 @@ nav label {
   transform: rotate(-405deg);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
   .menu-button-container {
     display: flex;
   }
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 81px;
+    margin-top: 123px;
     left: 0;
     flex-direction: column;
     width: 100%;
@@ -192,7 +149,6 @@ nav label {
     padding: 0;
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    
   }
   #menu-toggle:checked ~ .menu li {
     height: 3.9em;
@@ -206,87 +162,7 @@ nav label {
     padding: 0.5em 0;
     width: 100%;
     color: white;
-    background-color: #150c25;
+    background: transparent;
+    background-color: rgba(22, 22, 23, 0.5);
   }
-  #menu-toggle:checked ~ .menu li:last-child {
-    box-shadow: 0px 8px 12px -3px #522398;
-  }
-}
-
-
-/* div styles */
-.heading-spacer {
-  padding-top: 2.75rem;
-}
-
-div h2 {
-  font-family: 'Roboto';
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-  padding-top: 6rem;
-  color: white;
-}
-
-div p {
-  font-size: 1.2rem;
-  color: #848884;
-}
-
-
-/* team section */
-.team-container {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
-}
-
-.team-item {
-  background: white;
-  border-radius: 10px;
-  text-align: center;
-  width: 280px;
-  padding: 1rem;
-}
-
-.team-picture {
-  width: 15rem;
-  height: auto;
-  border-radius: 10px;
-}
-
-.team-info {
-  margin-top: 15px;
-}
-
-.name {
-  font-size: 1.2rem;
-  color: #333;
-}
-
-.major {
-  margin: 5px 0;
-  color: #777;
-}
-
-.email {
-  color: black;
-  margin-top: 10px;
-  text-decoration: none;
-}
-
-.email:hover {
-  color: white;
-  text-shadow: 0 0 10px #522398, 0 0 10px #522398, 0 0 10px #522398, 0 0 10px #522398;
-}
-
-
-/* footer */
-footer {
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

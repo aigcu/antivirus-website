@@ -1,0 +1,261 @@
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+
+/* global styles */
+html {
+  box-sizing: border-box;
+  background-image: url("../media/background.png");
+  background-repeat: repeat-y;
+  background-color: black;
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+}
+h2 {
+  font-family: 'Rubik Mono One';
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding-top: 6rem;
+  color: white;
+}
+p {
+  font-family: 'Yanone Kaffeesatz';
+  font-size: 1.0rem;
+  color: #848884;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.glow {
+  box-shadow: #522398 0 1px 10px 5px;
+}
+
+.main-container {
+  max-width: 88.5%;
+  margin: 0 auto;
+}
+
+.zoom-div {
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom-div:hover {
+  transform: scale(1.2);
+}
+
+
+/* Product Section */
+.product {
+  display: flex;
+  max-width: 45%;
+  margin: 0 auto;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product ul {
+  list-style: none;
+}
+
+.product-image {
+  margin-top: 150px;
+  height: 300px;
+  margin-left: 5%;
+}
+
+.product h2 {
+  font-family: 'Rubik Mono One';
+  font-size: 60px;
+  width: 300px;
+  text-align: left;
+}
+
+.product p {
+  font-size: 26px;
+  color: gray;
+  width: 300px;
+  text-align: left;
+}
+
+.button {
+  width: 150px;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  outline-color: white;
+  outline-style: solid;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.button span {
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/* Goal Section */
+.goal {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.goal h2 {
+  font-family: 'Rubik Mono One';
+  font-size: 40px;
+}
+
+.goal p {
+  font-size: 28px;
+  margin-bottom: 150px;
+}
+
+
+/* team section */
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.team-header {
+  display: flex;
+  color: white;
+  font-size: 25px;
+  font-family: 'Rubik Mono One';
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.team-item {
+  background: black;
+  border-radius: 10px;
+  text-align: center;
+  width: 280px;
+  padding: 1rem;
+  position: relative;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.team-item::after, .team-item::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), transparent 60%, white);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 1px;
+  border-radius: 11px;
+  animation: 5s spin linear infinite;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+.team-item::before {
+  filter: blur(0.5rem);
+  opacity: 0.8;
+}
+/*
+.team-item::before {
+  content: "";
+  position: absolute; 
+  inset: -3px;
+  background: conic-gradient(from 90deg at 40% -25%, aqua, blue, white);
+  filter: blur(10px);
+  transform: translate3d(0px,0px,-1px);
+  border-radius: inherit;
+  pointer-events: none;
+}
+*/
+.team-picture {
+  width: 15rem;
+  height: auto;
+  border-radius: 10px;
+}
+
+.team-info {
+  margin-top: 15px;
+}
+
+.name {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.major {
+  margin: 5px 0;
+  color: #555;
+}
+
+.email {
+  color: #333;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.email:hover {
+  color: #999;
+  text-shadow: 0 0 10px #522398, 0 0 10px #522398, 0 0 10px #522398, 0 0 10px #522398;
+}
+
+
+/* footer */
+footer {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
