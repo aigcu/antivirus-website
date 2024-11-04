@@ -167,7 +167,7 @@ nav label {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .nav-antivirus {
     font-size: 50px;
   }
