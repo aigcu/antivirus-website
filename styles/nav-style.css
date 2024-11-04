@@ -166,3 +166,9 @@ nav label {
     background-color: rgba(22, 22, 23, 0.5);
   }
 }
+
+@media (max-width: 600px) {
+  .nav-antivirus {
+    font-size: 50px;
+  }
+} 
